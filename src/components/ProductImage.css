@@ -1,0 +1,19 @@
+.product-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius);
+  width: 100%;
+}
+
+.product-image--sm  { aspect-ratio: 1; }
+.product-image--md  { aspect-ratio: 4/3; }
+.product-image--lg  { aspect-ratio: 1; }
+
+.product-image__emoji {
+  font-size: 2.5rem;
+  pointer-events: none;
+  user-select: none;
+}
+
+.product-image--lg .product-image__emoji { font-size: 5rem; }
