@@ -5,11 +5,13 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s;
 }
 
 .product-card:hover {
-  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.09);
+  transform: translateY(-2px);
+  border-color: #d4ccc4;
 }
 
 .product-card__image-link {
@@ -63,10 +65,11 @@
   color: #fff;
   border: none;
   border-radius: var(--radius);
-  padding: 0.35rem 0.75rem;
+  padding: 0.45rem 0.9rem;
   font-size: 0.8rem;
   letter-spacing: 0.02em;
   transition: background-color 0.15s;
+  white-space: nowrap;
 }
 
 .product-card__btn:hover { background-color: var(--color-accent-hover); }

@@ -126,6 +126,19 @@
   color: var(--color-text);
   display: flex;
   align-items: center;
+  padding: var(--space-sm) var(--space-xs);
+  border-radius: var(--radius);
+  transition: color 0.15s, background-color 0.15s;
+}
+
+.navbar__mobile-link:hover {
+  color: var(--color-accent);
+  background-color: var(--color-bg);
+}
+
+.navbar__mobile-link.active {
+  color: var(--color-accent);
+  font-weight: 600;
 }
 
 @media (max-width: 600px) {

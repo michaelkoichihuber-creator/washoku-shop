@@ -40,8 +40,8 @@ export default function Navbar() {
 
       {open && (
         <div className="navbar__mobile">
-          <NavLink to="/" end className="navbar__mobile-link" onClick={() => setOpen(false)}>Home</NavLink>
-          <NavLink to="/shop" className="navbar__mobile-link" onClick={() => setOpen(false)}>Shop</NavLink>
+          <NavLink to="/" end className={({ isActive }) => `navbar__mobile-link${isActive ? ' active' : ''}`} onClick={() => setOpen(false)}>Home</NavLink>
+          <NavLink to="/shop" className={({ isActive }) => `navbar__mobile-link${isActive ? ' active' : ''}`} onClick={() => setOpen(false)}>Shop</NavLink>
           <Link to="/cart" className="navbar__mobile-link" onClick={() => setOpen(false)}>
             Cart {cartCount > 0 && <span className="navbar__cart-badge navbar__cart-badge--inline">{cartCount}</span>}
           </Link>

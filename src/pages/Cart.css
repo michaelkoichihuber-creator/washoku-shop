@@ -69,12 +69,13 @@
   border: none;
   font-size: 1.1rem;
   color: var(--color-text);
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: color 0.12s;
+  flex-shrink: 0;
 }
 
 .cart__qty-btn:hover { color: var(--color-accent); }

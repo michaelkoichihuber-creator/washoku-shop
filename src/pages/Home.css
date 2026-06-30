@@ -50,6 +50,7 @@
   color: #fff;
   font-family: var(--font-sans);
   font-size: 0.95rem;
+  transition: border-color 0.15s, background-color 0.15s;
 }
 
 .home__search-input::placeholder { color: rgba(255,255,255,0.4); }
@@ -241,6 +242,12 @@
   .home__recipes-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
+@media (max-width: 680px) {
+  .home__product-grid { grid-template-columns: repeat(2, 1fr); }
+  .home__categories-grid { grid-template-columns: repeat(2, 1fr); }
+  .home__hero-links { gap: var(--space-sm); }
+}
+
 @media (max-width: 600px) {
   .home__categories-grid { grid-template-columns: repeat(2, 1fr); }
   .home__recipes-grid { grid-template-columns: 1fr; }
@@ -248,4 +255,6 @@
 
 @media (max-width: 480px) {
   .home__product-grid { grid-template-columns: 1fr; }
+  .home__search { flex-direction: column; }
+  .home__search-btn { width: 100%; }
 }
