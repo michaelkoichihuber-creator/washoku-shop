@@ -1,19 +1,59 @@
 .product-image {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: #f3efe8;
+}
+
+.product-image--sm { aspect-ratio: 1; }
+.product-image--md { aspect-ratio: 1; }
+.product-image--lg { aspect-ratio: 1; }
+
+.product-image__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0;
+  transition: opacity 0.35s var(--ease), transform 0.5s var(--ease);
+  transform: scale(1.01);
+}
+
+.product-image__img--loaded {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Seamless studio-backdrop placeholder — shown until a real photo is
+   dropped into /public/products with a matching filename. */
+.product-image__placeholder {
+  position: absolute;
+  inset: 0;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-radius: var(--radius);
-  width: 100%;
+  gap: 0.5rem;
+  background:
+    radial-gradient(ellipse at 28% 22%, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0) 55%),
+    linear-gradient(165deg, #faf7f2 0%, #f0ebe1 55%, #e7dfd1 100%);
 }
 
-.product-image--sm  { aspect-ratio: 1; }
-.product-image--md  { aspect-ratio: 4/3; }
-.product-image--lg  { aspect-ratio: 1; }
-
-.product-image__emoji {
-  font-size: 2.5rem;
-  pointer-events: none;
-  user-select: none;
+.product-image__placeholder-mark {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  color: rgba(44, 44, 44, 0.14);
 }
 
-.product-image--lg .product-image__emoji { font-size: 5rem; }
+.product-image__placeholder-label {
+  font-size: 0.62rem;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: rgba(44, 44, 44, 0.28);
+}
+
+.product-image--sm .product-image__placeholder-label { display: none; }
+.product-image--sm .product-image__placeholder-mark { font-size: 1.15rem; }
+
+.product-image--lg .product-image__placeholder-mark { font-size: 2.4rem; }
+.product-image--lg .product-image__placeholder-label { font-size: 0.7rem; }

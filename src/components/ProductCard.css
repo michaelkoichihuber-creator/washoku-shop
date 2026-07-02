@@ -1,43 +1,57 @@
 .product-card {
   background-color: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius);
+  border-radius: var(--radius-lg);
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.25s var(--ease), transform 0.25s var(--ease);
 }
 
 .product-card:hover {
-  box-shadow: 0 6px 20px rgba(0,0,0,0.09);
-  transform: translateY(-2px);
-  border-color: #d4ccc4;
+  box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
 }
 
 .product-card__image-link {
   display: block;
+  position: relative;
+}
+
+.product-card__badge {
+  position: absolute;
+  top: var(--space-sm);
+  left: var(--space-sm);
+  background-color: rgba(35, 33, 30, 0.85);
+  color: #fff;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.3rem 0.6rem;
+  border-radius: var(--radius);
 }
 
 .product-card__body {
-  padding: var(--space-md);
+  padding: var(--space-md) var(--space-md) var(--space-lg);
   display: flex;
   flex-direction: column;
-  gap: var(--space-xs);
+  gap: 0.3rem;
   flex: 1;
 }
 
 .product-card__category {
-  font-size: 0.72rem;
+  font-size: 0.68rem;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.09em;
   color: var(--color-muted);
 }
 
 .product-card__name {
   font-family: var(--font-serif);
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: 600;
-  line-height: 1.3;
+  line-height: 1.35;
+  margin-top: 0.15rem;
 }
 
 .product-card__name a:hover { color: var(--color-accent); }
@@ -51,12 +65,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: var(--space-sm);
+  margin-top: var(--space-md);
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--color-border);
 }
 
 .product-card__price {
   font-family: var(--font-serif);
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   font-weight: 600;
 }
 
@@ -65,10 +81,11 @@
   color: #fff;
   border: none;
   border-radius: var(--radius);
-  padding: 0.45rem 0.9rem;
-  font-size: 0.8rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.78rem;
+  font-weight: 500;
   letter-spacing: 0.02em;
-  transition: background-color 0.15s;
+  transition: background-color 0.15s var(--ease);
   white-space: nowrap;
 }
 
@@ -79,9 +96,3 @@
 }
 
 .product-card__btn--added:hover { background-color: #3d6649; }
-
-.product-card__out {
-  font-size: 0.75rem;
-  color: var(--color-muted);
-  margin-top: var(--space-xs);
-}

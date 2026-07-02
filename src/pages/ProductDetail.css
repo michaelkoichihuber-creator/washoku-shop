@@ -29,6 +29,12 @@
   margin-bottom: var(--space-2xl);
 }
 
+.product-detail__image-col {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
 .product-detail__category {
   font-size: 0.75rem;
   text-transform: uppercase;
@@ -164,7 +170,7 @@
 .product-detail__related-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: var(--space-md);
+  gap: var(--space-lg);
 }
 
 @media (max-width: 760px) {

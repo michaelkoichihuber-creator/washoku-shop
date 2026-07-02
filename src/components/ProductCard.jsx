@@ -16,6 +16,7 @@ export default function ProductCard({ product }) {
     <article className="product-card">
       <Link to={`/shop/${product.slug}`} className="product-card__image-link">
         <ProductImage product={product} size="md" />
+        {!product.inStock && <span className="product-card__badge">Out of Stock</span>}
       </Link>
       <div className="product-card__body">
         <p className="product-card__category">{product.category}</p>
@@ -33,7 +34,6 @@ export default function ProductCard({ product }) {
             {inCart ? '✓ In Cart' : 'Add to Cart'}
           </button>
         </div>
-        {!product.inStock && <p className="product-card__out">Out of stock</p>}
       </div>
     </article>
   )

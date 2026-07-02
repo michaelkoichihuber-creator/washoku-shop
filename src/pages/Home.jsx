@@ -7,16 +7,22 @@ import './Home.css'
 
 const featured = products.filter(p => p.featured)
 
-const CATEGORY_EMOJI = {
-  'Ingredients':         '🫙',
-  'Rice & Noodles':      '🍚',
-  'Sauces & Seasonings': '🍶',
-  'Cookware':            '🍳',
-  'Kitchen Tools':       '🔪',
-  'Tableware':           '🍜',
-  'Cookbooks':           '📖',
-  'Starter Kits':        '📦',
+const CATEGORY_KANJI = {
+  'Ingredients':         '調',
+  'Rice & Noodles':      '麺',
+  'Sauces & Seasonings': '味',
+  'Cookware':            '器',
+  'Kitchen Tools':       '具',
+  'Tableware':           '膳',
+  'Cookbooks':           '書',
+  'Starter Kits':        '箱',
 }
+
+const VALUE_PROPS = [
+  { title: 'Imported from Japan', body: 'Sourced directly from long-standing Japanese producers, not relabelled imports.' },
+  { title: 'Free shipping over $60', body: 'Delivered in careful, well-packed boxes so glass and ceramics arrive intact.' },
+  { title: 'Curated, not endless', body: 'Every product is chosen and used by our team — no filler, no duplicates.' },
+]
 
 const RECIPE_CARDS = [
   {
@@ -82,6 +88,15 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="home__values container">
+        {VALUE_PROPS.map(v => (
+          <div key={v.title} className="home__value">
+            <h3 className="home__value-title">{v.title}</h3>
+            <p className="home__value-body">{v.body}</p>
+          </div>
+        ))}
+      </section>
+
       <section className="home__featured container">
         <div className="home__section-header">
           <h2 className="home__section-title">Featured Products</h2>
@@ -104,7 +119,7 @@ export default function Home() {
                 to={`/shop?category=${encodeURIComponent(cat)}`}
                 className="home__category-tile"
               >
-                <span className="home__category-emoji" aria-hidden="true">{CATEGORY_EMOJI[cat]}</span>
+                <span className="home__category-kanji" aria-hidden="true">{CATEGORY_KANJI[cat]}</span>
                 <span className="home__category-name">{cat}</span>
               </Link>
             ))}
