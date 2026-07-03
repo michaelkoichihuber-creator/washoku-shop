@@ -6,7 +6,7 @@ export const products = [
     category: 'Ingredients',
     description: 'Traditional Japanese white miso paste made from organic soybeans and rice. Mild, slightly sweet, and versatile — ideal for miso soup, salad dressings, marinades, and glazes. Lower salt content than red miso, making it a great starting point for anyone new to Japanese cooking.',
     price: 8.99,
-    image: '/products/organic-white-miso-paste.jpg',
+    image: '/products/organic-white-miso-paste.png',
     brand: 'Hikari',
     stockQuantity: 42,
     inStock: true,
