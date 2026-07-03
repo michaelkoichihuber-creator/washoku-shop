@@ -38,7 +38,7 @@ export const products = [
     category: 'Ingredients',
     description: 'Authentic hon mirin — real mirin brewed from glutinous rice, with a natural sweetness and 14% alcohol. Adds gloss and depth to sauces, glazes, and simmered dishes. Essential for teriyaki, tsukemono, and dashimaki. Avoid the cheaper "mirin-style seasoning" — this is the real thing.',
     price: 9.99,
-    image: '/products/hon-mirin.jpg',
+    image: '/products/hon-mirin.png',
     brand: 'Takara',
     stockQuantity: 31,
     inStock: true,
