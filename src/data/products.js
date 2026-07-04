@@ -102,7 +102,7 @@ export const products = [
     category: 'Sauces & Seasonings',
     description: 'Mild, slightly sweet Japanese rice vinegar — gentler than white or cider vinegar with a clean acidity. Use for seasoning sushi rice, pickling vegetables (tsukemono), making ponzu, and balancing sauces. An essential bottle to keep stocked.',
     price: 4.99,
-    image: '/products/rice-vinegar.jpg',
+    image: '/products/rice-vinegar.png',
     brand: 'Marukan',
     stockQuantity: 73,
     inStock: true,
