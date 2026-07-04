@@ -118,7 +118,7 @@ export const products = [
     category: 'Cookware',
     description: 'A rectangular Japanese omelette pan with a non-stick coating, designed specifically for rolling tamagoyaki — the layered, sweet-savoury egg roll found in every bento box. The square shape makes it easy to roll and fold. Heavy-gauge aluminium core for even heating. Works on gas and electric hobs.',
     price: 29.99,
-    image: '/products/tamagoyaki-pan.jpg',
+    image: '/products/tamagoyaki-pan.png',
     brand: 'Yoshikawa',
     stockQuantity: 18,
     inStock: true,
