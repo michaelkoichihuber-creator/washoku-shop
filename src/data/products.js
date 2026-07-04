@@ -54,7 +54,7 @@ export const products = [
     category: 'Rice & Noodles',
     description: 'Premium Japanese short-grain rice — the foundation of Japanese cooking. Sticky enough to form onigiri, light enough to serve alongside any dish. Grown in California using Japanese cultivation methods. Rinse well, cook in a 1:1.1 rice-to-water ratio, and rest covered for 10 minutes after cooking.',
     price: 12.99,
-    image: '/products/japanese-short-grain-rice.jpg',
+    image: '/products/japanese-short-grain-rice.png',
     brand: 'Nishiki',
     stockQuantity: 65,
     inStock: true,
