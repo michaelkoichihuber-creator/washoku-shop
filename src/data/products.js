@@ -198,7 +198,7 @@ export const products = [
     category: 'Tableware',
     description: 'Two pairs of hand-lacquered natural wood chopsticks in a deep crimson finish, crafted in the Wajima urushi tradition. Tapered tips for precise handling, non-slip texture at the grip. Hand-wash only. A small daily object worth using properly.',
     price: 16.99,
-    image: '/products/lacquer-chopstick-set.jpg',
+    image: '/products/lacquer-chopstick-set.png',
     brand: 'Wajima',
     stockQuantity: 38,
     inStock: true,
