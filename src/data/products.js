@@ -166,7 +166,7 @@ export const products = [
     category: 'Kitchen Tools',
     description: 'A wide, flat shamoji rice paddle made from BPA-free plastic with a textured surface to prevent rice from sticking. Essential for folding rice without crushing the grains. Comes with a stand for resting on the counter. The standard tool in every Japanese kitchen.',
     price: 6.99,
-    image: '/products/japanese-rice-paddle.jpg',
+    image: '/products/japanese-rice-paddle.png',
     brand: 'Ohitsu',
     stockQuantity: 112,
     inStock: true,
