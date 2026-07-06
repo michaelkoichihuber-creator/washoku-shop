@@ -214,7 +214,7 @@ export const products = [
     category: 'Cookbooks',
     description: "The definitive English-language guide to Japanese cooking by Shizuo Tsuji, founder of Japan's most prestigious cooking school. Covers dashi, sushi, tempura, noodles, tofu, and much more with careful attention to technique and ingredient selection. First published in 1980 and still the standard reference.",
     price: 34.99,
-    image: '/products/japanese-cooking-a-simple-art.jpg',
+    image: '/products/japanese-cooking-a-simple-art.png',
     brand: 'Kodansha',
     stockQuantity: 21,
     inStock: true,
