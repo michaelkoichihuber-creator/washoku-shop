@@ -134,7 +134,7 @@ export const products = [
     category: 'Cookware',
     description: 'A traditional Japanese donabe earthenware cooking pot, hand-finished in Iga, Japan — a region famous for its fine-grained fire-clay. Use for nabemono (hot pot), cooking rice directly on the hob, or slow-simmering soups and stews. Retains heat exceptionally well. Requires curing before first use.',
     price: 79.99,
-    image: '/products/donabe-clay-pot.jpg',
+    image: '/products/donabe-clay-pot.png',
     brand: 'Iga-mono',
     stockQuantity: 9,
     inStock: true,
