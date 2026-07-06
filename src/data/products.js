@@ -230,7 +230,7 @@ export const products = [
     category: 'Cookbooks',
     description: 'A focused, beautifully photographed guide to making miso soup from scratch — covering dashi stocks, miso varieties, seasonal ingredient pairings, and the quiet ritual of daily miso soup in Japanese households. Short, readable, and immediately useful.',
     price: 22.99,
-    image: '/products/the-japanese-art-of-miso-soup.jpg',
+    image: '/products/the-japanese-art-of-miso-soup.png',
     brand: 'Quarto',
     stockQuantity: 16,
     inStock: true,
