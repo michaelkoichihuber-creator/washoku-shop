@@ -22,7 +22,7 @@ export const products = [
     category: 'Ingredients',
     description: 'Rich, full-bodied tamari soy sauce brewed in the traditional Japanese style. Darker and less salty than Chinese soy sauce, with a deep umami flavour and no added wheat — suitable for gluten-free cooking. Use as a dipping sauce, for seasoning broths, or in marinades.',
     price: 6.49,
-    image: '/products/tamari-soy-sauce.jpg',
+    image: '/products/tamari-soy-sauce.png',
     brand: 'Kikkoman',
     stockQuantity: 88,
     inStock: true,
