@@ -150,7 +150,7 @@ export const products = [
     category: 'Kitchen Tools',
     description: 'A traditional two-tier bamboo steamer with a tight-fitting lid. Stack tiers to cook multiple dishes at once — gyoza on the top tier, vegetables below. Bamboo absorbs excess moisture, preventing sogginess. Fits standard 30 cm woks. Soak in water for 30 minutes before first use.',
     price: 18.99,
-    image: '/products/bamboo-steamer-set.jpg',
+    image: '/products/bamboo-steamer-set.png',
     brand: 'Zenware',
     stockQuantity: 24,
     inStock: true,
