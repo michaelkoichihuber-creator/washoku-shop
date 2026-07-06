@@ -246,7 +246,7 @@ export const products = [
     category: 'Starter Kits',
     description: 'Everything you need to get started with Japanese home cooking, curated into one box: white miso paste, tamari soy sauce, hon mirin, rice vinegar, dashi powder, short-grain rice (500 g), a rice paddle, and a copy of our printed quick-start recipe guide. A thoughtful gift or a no-friction beginning.',
     price: 59.99,
-    image: '/products/japanese-home-cooking-starter-kit.jpg',
+    image: '/products/japanese-home-cooking-starter-kit.png',
     brand: 'Washoku',
     stockQuantity: 7,
     inStock: true,
