@@ -86,7 +86,7 @@ export const products = [
     category: 'Sauces & Seasonings',
     description: 'A bright, citrus-forward soy-based dipping sauce made with yuzu and sudachi juice. Use as a dipping sauce for shabu-shabu, gyoza, and grilled fish, or as a light dressing for salads and cold tofu. Lighter than regular soy sauce, with a clean finish.',
     price: 7.99,
-    image: '/products/ponzu-citrus-sauce.jpg',
+    image: '/products/ponzu-citrus-sauce.png',
     brand: 'Mizkan',
     stockQuantity: 47,
     inStock: true,
