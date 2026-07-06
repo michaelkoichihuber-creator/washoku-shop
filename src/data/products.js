@@ -182,7 +182,7 @@ export const products = [
     category: 'Tableware',
     description: 'A set of four deep, wide-rimmed ramen bowls in classic Japanese cobalt blue and white glaze — wide enough to arrange toppings and deep enough to hold a generous portion of broth. Microwave and dishwasher safe. Made in the Hasami porcelain tradition, Nagasaki Prefecture.',
     price: 44.99,
-    image: '/products/ramen-bowl-set.jpg',
+    image: '/products/ramen-bowl-set.png',
     brand: 'Hasami',
     stockQuantity: 14,
     inStock: true,
