@@ -70,7 +70,7 @@ export const products = [
     category: 'Rice & Noodles',
     description: 'Traditional Japanese buckwheat soba noodles, 80% buckwheat flour. Nutty and satisfying — serve cold with a tsuyu dipping sauce (zaru soba) or hot in a dashi broth. Cook in rapidly boiling water for 4–5 minutes, then rinse immediately under cold water to stop cooking and remove surface starch.',
     price: 5.49,
-    image: '/products/dried-soba-noodles.jpg',
+    image: '/products/dried-soba-noodles.png',
     brand: 'Hakubaku',
     stockQuantity: 54,
     inStock: true,
